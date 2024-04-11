@@ -4,18 +4,30 @@
   text-align: center;
   font-family: "Karla", sans-serif;
 }
+.navbar-container {
+  position: absolute;
+}
+.navbar {
+  position: sticky;
+  padding: 24px;
+  top: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+}
 
 .container {
-  height: 150vh;
+  height: 170vh;
   position: relative;
 }
 
 .main-container {
-  height: 260vh;
+  height: 305vh;
   width: 100vw;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -25px;
+  left: -25px;
   z-index: 1;
 }
 
@@ -27,8 +39,8 @@
 }
 
 .main-image {
-  width: 75vw;
-  height: 75vh;
+  width: 65vw;
+  height: 65vh;
   object-fit: cover;
 }
 
@@ -38,7 +50,6 @@
   height: 100vh;
   background-color: black;
   overflow: hidden;
-
 }
 
 .element {
@@ -53,26 +64,160 @@
 }
 
 .image-container {
-  /* width: 25vw;
-  height: 25vh; */
   position: relative;
 }
 
 .pic2 {
-  top: 25vh;
-  left: -40vw;
+  top: -140px;
+  left: -260px;
   position: relative;
+}
+
+.pic2 .image {
+  width: 300px;
 }
 
 .pic3 {
-  top: -25vh;
-  left: 25vw;
+  top: 50px;
+  left: 600px;
   position: relative;
 }
 
+.pic3 .image {
+  width: 200px;
+}
+
+.pic4 {
+  top: 250px;
+  left: -400px;
+  position: relative;
+}
+
+.pic4 .image {
+  width: 200px;
+}
+
+.pic5 {
+  top: -210px;
+  left: 380px;
+  position: relative;
+}
+
+.pic5 .image {
+  width: 500px;
+}
+
+.pic6 {
+  top: -20px;
+  left: -600px;
+  position: relative;
+}
+
+.pic6 .image {
+  width: 250px;
+}
+
+.pic7 {
+  top: -300px;
+  left: -520px;
+  position: relative;
+}
+
+.pic7 .image {
+  width: 250px;
+}
+
+.pic8 {
+  top: 270px;
+  left: -250px;
+  position: relative;
+}
+
+.pic8 .image {
+  width: 300px;
+}
+
+.pic9 {
+  top: -330px;
+  left: -20px;
+  position: relative;
+}
+
+.pic9 .image {
+  width: 400px;
+}
+
+.pic10 {
+  top: 400px;
+  left: -550px;
+  position: relative;
+}
+
+.pic10 .image {
+  width: 200px;
+}
+
+.pic11 {
+  top: 250px;
+  left: 300px;
+  position: relative;
+}
+
+.pic11 .image {
+  width: 350px;
+}
+
+.pic12 {
+  top: 250px;
+  left: 450px;
+  position: relative;
+}
+
+.pic12 .image {
+  width: 300px;
+}
+
+.pic13 {
+  top: 50px;
+  left: 600px;
+  position: relative;
+}
+
+.pic13 .image {
+  width: 250px;
+}
+
+.pic14 {
+  top: 450px;
+  left: 700px;
+  position: relative;
+}
+
+.pic14 .image {
+  width: 450px;
+}
+
+.pic15 {
+  top: -550px;
+  left: 450px;
+  position: relative;
+}
+
+.pic15 .image {
+  width: 200px;
+}
+
+.pic16 {
+  top: 450px;
+  left: 20px;
+  position: relative;
+}
+
+.pic16 .image {
+  width: 200px;
+}
+
 .image {
-  width: 30vw;
-  height: 30vh;
   object-fit: contain;
 }
 
