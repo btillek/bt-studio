@@ -23,7 +23,7 @@
 }
 
 .main-container {
-  height: 305vh;
+  height: 315vh;
   width: 100vw;
   position: absolute;
   top: -25px;
@@ -39,8 +39,8 @@
 }
 
 .main-image {
-  width: 65vw;
-  height: 65vh;
+  width: 60vw;
+  height: 60vh;
   object-fit: cover;
 }
 
@@ -231,5 +231,11 @@
 
 .project1 {
   height: 100vh;
-  background-color: orange;
+  padding: 100px;
+  background-color: black;
+  color: white;
+}
+
+.project-container {
+
 }
