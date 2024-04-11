@@ -26,6 +26,10 @@ function App() {
       <Imgs />
       <div className="text-block">
       Boy Tillekens is a front-end developer with a background in animation and graphic design. Recently graduated from Le Wagon, designing and building a real-time multiplayer chess app.
+      <div className="social-links">
+        <a className="social" href="https://github.com/btillek">GitHub</a>
+        <a className="social" href="#">Instagram</a>
+      </div>
       </div>
       <div className="project1">
         <Project1 />
