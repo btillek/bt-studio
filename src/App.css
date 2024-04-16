@@ -245,7 +245,7 @@
 
 .project1 {
   height: 100vh;
-  padding: 100px;
+  padding-left: 50px;
   background-color: gray;
   color: white;
   z-index: 3;
