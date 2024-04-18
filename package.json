@@ -1,6 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
+  "homepage": "https://btillek.github.io/portfolio-website",
   "private": true,
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
@@ -18,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "video.js": "^8.10.0"
   }
 }
