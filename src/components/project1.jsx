@@ -34,7 +34,7 @@ function Project1() {
 
       <h2 onClick={() => setShowNerd(true)} onMouseEnter={() => setNerdHidden(false)} onMouseLeave={() => setNerdHidden(true)} className="link">
         N*E*R*D "In Search Of..."</h2>
-        Online advertisement <br />
+        2022 <br />
       <ModalNerd
         open={showNerd}
         onClose={() => setShowNerd(false)}
@@ -42,7 +42,7 @@ function Project1() {
 
       <h2 onClick={() => setShowGrad(true)} onMouseEnter={() => setGradHidden(false)} onMouseLeave={() => setGradHidden(true)} className="link">
         Kanye West "Graduation" Anniversary</h2>
-        Online advertisement <br />
+        2022 <br />
       <ModalGrad
         open={showGrad}
         onClose={() => setShowGrad(false)}
@@ -50,7 +50,7 @@ function Project1() {
 
       <h2 onClick={() => setShowDice(true)} onMouseEnter={() => setDiceHidden(false)} onMouseLeave={() => setDiceHidden(true)} className="link">
         DICE Logo</h2>
-        In-app visualizer <br />
+        2022 <br />
       <ModalDice
         open={showDice}
         onClose={() => setShowDice(false)}
@@ -58,7 +58,7 @@ function Project1() {
 
       <h2 onClick={() => setShowCabin(true)} onMouseEnter={() => setCabinHidden(false)} onMouseLeave={() => setCabinHidden(true)} className="link">
         Cabin Fever</h2>
-        Short film <br />
+        2022 <br />
       <ModalCabin
         open={showCabin}
         onClose={() => setShowCabin(false)}
@@ -66,7 +66,7 @@ function Project1() {
 
       <h2 onClick={() => setShowMaya(true)} onMouseEnter={() => setMayaHidden(false)} onMouseLeave={() => setMayaHidden(true)} className="link">
         Maya Delilah "Silver Lining"</h2>
-        Music Video <br />
+        2023 <br />
       <ModalMaya
         open={showMaya}
         onClose={() => setShowMaya(false)}
@@ -74,7 +74,7 @@ function Project1() {
 
       <h2 onClick={() => setShowIdiotbox(true)} onMouseEnter={() => setIdiotboxHidden(false)} onMouseLeave={() => setIdiotboxHidden(true)} className="link">
         Idiotbox</h2>
-        Interlude for surf film <br />
+        2021 <br />
       <ModalIdiotbox
         open={showIdiotbox}
         onClose={() => setShowIdiotbox(false)}
@@ -82,7 +82,7 @@ function Project1() {
 
       <h2 onClick={() => setShowWm(true)} onMouseEnter={() => setWmHidden(false)} onMouseLeave={() => setWmHidden(true)} className="link">
         Wrong Man "Wait"</h2>
-        Music video <br />
+        2023 <br />
       <ModalWm
         open={showWm}
         onClose={() => setShowWm(false)}
@@ -90,7 +90,7 @@ function Project1() {
 
       <h2 onClick={() => setShowBeacon(true)} onMouseEnter={() => setBeaconHidden(false)} onMouseLeave={() => setBeaconHidden(true)} className="link">
         Beacon "Pay My Debts"</h2>
-        Music video<br />
+        2022<br />
       <ModalBeacon
         open={showBeacon}
         onClose={() => setShowBeacon(false)}

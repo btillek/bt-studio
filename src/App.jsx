@@ -17,11 +17,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <div className="navbar-container">
-        <div className="navbar">
-          BTAnimation
-        </div>
-      </div> */}
       <MainImg />
       <Imgs />
       <div className="text-block">
