@@ -73,21 +73,26 @@
   object-fit: contain;
 }
 
+.text-block-container {
+  margin: 0 auto;
+  width: 950px;
+}
+
 .text-block {
   position: relative;
   top: -50vh;
-  height: 100vh;
+  height: 120vh;
   color: white;
   background-color: black;
   font-size: 5rem;
-  padding: 0 150px;
+  /* padding: 0 150px; */
   padding-bottom: 100px;
   text-align: center;
 }
 
 .project1 {
   position: absolute;
-  top: 200vh;
+  top: 230vh;
   width: 100vw;
   height: 100vh;
   padding-left: 50px;
@@ -173,9 +178,14 @@
 }
 
 @media only screen and (max-width:1025px) {
+  .text-block-container {
+    margin: 0 auto;
+    width: 600px;
+  }
+
   .text-block {
     font-size: 4rem;
-    padding: 0 100px;
+    /* padding: 0 100px; */
     height: auto;
   }
 
@@ -194,9 +204,15 @@
 
 
 @media only screen and (max-width:600px) {
+  .text-block-container {
+    margin: 0 auto;
+    width: 350px;
+    /* padding: 24px; */
+  }
+
   .text-block {
-    font-size: 3rem;
-    padding: 0 24px;
+    font-size: 2.5rem;
+    /* padding: 0 24px; */
   }
 
   .project1 {
