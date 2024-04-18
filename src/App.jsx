@@ -26,7 +26,7 @@ function App() {
       <Imgs />
       <div className="text-block">
         BT Studio is based in The Netherlands, creating animated music videos, short films, and visualizers.
-        <br /><br /> Clients include <em>Universal Music Group, Capitol Music, DICE, Giphy, Quicksilver.</em>
+        <br /><br /> Clients include <em>Universal Music Group, Capitol Music Group, DICE, Giphy, Quicksilver.</em>
       </div>
       <div className="project1">
         <Project1 />

@@ -22,7 +22,11 @@ function Project1() {
   const [nerdHidden, setNerdHidden] = useState(true);
   const [gradHidden, setGradHidden] = useState(true);
   const [diceHidden, setDiceHidden] = useState(true);
-
+  const [cabinHidden, setCabinHidden] = useState(true);
+  const [mayaHidden, setMayaHidden] = useState(true);
+  const [idiotboxHidden, setIdiotboxHidden] = useState(true);
+  const [wmHidden, setWmHidden] = useState(true);
+  const [beaconHidden, setBeaconHidden] = useState(true);
 
   return (
     <div className="project-container">
@@ -52,15 +56,15 @@ function Project1() {
         onClose={() => setShowDice(false)}
         />
 
-      <h2 onClick={() => setShowCabin(true)} className="link">
+      <h2 onClick={() => setShowCabin(true)} onMouseEnter={() => setCabinHidden(false)} onMouseLeave={() => setCabinHidden(true)} className="link">
         Cabin Fever</h2>
-        Short film for Giphy <br />
+        Short film <br />
       <ModalCabin
         open={showCabin}
         onClose={() => setShowCabin(false)}
         />
 
-      <h2 onClick={() => setShowMaya(true)} className="link">
+      <h2 onClick={() => setShowMaya(true)} onMouseEnter={() => setMayaHidden(false)} onMouseLeave={() => setMayaHidden(true)} className="link">
         Maya Delilah "Silver Lining"</h2>
         Music Video <br />
       <ModalMaya
@@ -68,7 +72,7 @@ function Project1() {
         onClose={() => setShowMaya(false)}
         />
 
-      <h2 onClick={() => setShowIdiotbox(true)} className="link">
+      <h2 onClick={() => setShowIdiotbox(true)} onMouseEnter={() => setIdiotboxHidden(false)} onMouseLeave={() => setIdiotboxHidden(true)} className="link">
         Idiotbox</h2>
         Interlude for surf film <br />
       <ModalIdiotbox
@@ -76,7 +80,7 @@ function Project1() {
         onClose={() => setShowIdiotbox(false)}
         />
 
-      <h2 onClick={() => setShowWm(true)} className="link">
+      <h2 onClick={() => setShowWm(true)} onMouseEnter={() => setWmHidden(false)} onMouseLeave={() => setWmHidden(true)} className="link">
         Wrong Man "Wait"</h2>
         Music video <br />
       <ModalWm
@@ -84,7 +88,7 @@ function Project1() {
         onClose={() => setShowWm(false)}
         />
 
-      <h2 onClick={() => setShowBeacon(true)} className="link">
+      <h2 onClick={() => setShowBeacon(true)} onMouseEnter={() => setBeaconHidden(false)} onMouseLeave={() => setBeaconHidden(true)} className="link">
         Beacon "Pay My Debts"</h2>
         Music video<br />
       <ModalBeacon
@@ -96,56 +100,61 @@ function Project1() {
         <h2>
           Online advertisement promoting the release of a new line of merchandise celebrating the 20th anniversary of N*E*R*D's debut album "In Search Of..."
         </h2>
-        <p><em>N*E*R*D</em></p>
-        </div>}
+        <p><em>N*E*R*D, 2022</em></p>
+      </div>}
 
-      { gradHidden ? null : <h2 style={{position: "fixed", bottom: 24, marginRight: "50px", paddingTop: 12, borderTop: "0.5px solid gray"}}>
-        Online advertisement promoting the 15th anniversary of Kanye West's "Graduation" album
-        <br /><p><em>Universal Music Group</em></p>
-        </h2> }
+      { gradHidden ? null : <div className="project-info">
+        <h2>
+          Online advertisement promoting the 15th anniversary of Kanye West's "Graduation" album
+        </h2>
+        <p><em>Universal Music Group, 2022</em></p>
+      </div> }
 
-      { diceHidden ? null : <h2 style={{position: "fixed", bottom: 24, marginRight: "50px", paddingTop: 12, borderTop: "0.5px solid gray"}}>
-        3 different animations for the DICE logo, displayed whenever a user purchases a ticket through the app.
-        <br /><p><em>DICE.FM</em></p>
-        </h2> }
+      { diceHidden ? null : <div className="project-info">
+        <h2>
+          3 different animations for the DICE logo, displayed whenever a user purchases a ticket through the app
+        </h2>
+        <p><em>DICE.FM, 2022</em></p>
+      </div> }
 
-      {/* <video style={videoStyles} controls muted crossorigin="anonymous" draggable="true" class="giphy-video" playsinline="" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXRzNjJueW1pejAwNDBreTR3M29xOWNmZGU4ZTUxcDR6b2Zmd3ZteSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9diZjYz1lbg/qipXYMHagoYkdMOSPu/giphy480p.mp4" data-giphy-id="wIJzSKEX4CkHeBg0rt"></video><br /> <br />
-      <a className="link" href="#">N*E*R*D "In Search Of..."</a> <br /> <br />
-      Online advertisement promoting a line of merchandise celebrating the 20th anniversary of N*E*R*D's first album "In Search Of..."
-      <br /> <br /> <br /> <br /><br /> <br /> <br /> <br />
+      { cabinHidden ? null : <div className="project-info">
+        <h2>
+          Short film about spending too much time inside, commissioned by Giphy to promote their new clips
+        </h2>
+        <p><em>Giphy, 2022</em></p>
+      </div> }
 
-      <video style={videoStyles} controls muted crossorigin="anonymous" draggable="true" class="giphy-video" playsinline="" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHZmaXY5ajRiZ3hoZGoxaTdneDk2dzJlZ2p1eXh3ZDdqOHgxcGd2ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9diZjYz1lbg/wIJzSKEX4CkHeBg0rt/giphy480p.mp4" data-giphy-id="wIJzSKEX4CkHeBg0rt"></video><br /> <br />
-      <a className="link" href="#">Cabin Fever</a> <br /> <br />
-      Short film about cabin fever, commissioned by Giphy
-      <br /> <br /> <br /> <br /><br /> <br /> <br /> <br />
+      { mayaHidden ? null : <div className="project-info">
+        <h2>
+          Music video for Maya Delilah's song "Silver Lining"
+        </h2>
+        <p><em>Capitol Music Group, 2023</em></p>
+      </div> }
 
-      <h2 className="link">Kanye West "Graduation" 15th Anniversary</h2>Universal Music Group<br /><br />
-      <a className="link" href="https://www.instagram.com/reel/CiYwxQVjG8-/?hl=nl">Kanye West "Graduation" 15th Anniversary</a> Online advertisement
-      <br /><br />
-      <br /><br />
-      <a className="link" href="https://www.youtube.com/watch?v=Zs2X5-LR_Yk&ab_channel=SundayDriveRecords">Wrong Man — "Wait"</a> Music video
-      <br /><br />
-      <a className="link" href="#">p5.js Explorations</a> Own project
-      <br /><br /> */}
+      { idiotboxHidden ? null : <div className="project-info">
+        <h2>
+          Short animated interlude for Idiotbox, a film about pro surfer Kael Walsh. Directed by Wade Carroll
+        </h2>
+        <p><em>Quicksilver, 2021</em></p>
+      </div> }
 
+      { wmHidden ? null : <div className="project-info">
+        <h2>
+          Music video for the song "Wait" by Wrong Man
+        </h2>
+        <p><em>Thirty Something Records, 2023</em></p>
+      </div> }
 
-      {/* <video
-        id="my-video"
-        class="video-js"
-        controls
-        autoplay
-        preload="auto"
-        width="500"
-        height="500"
-        poster={Poster}
-        data-setup="{}"
-      >
-        <source src={Video} type="video/mp4" />
-        <p class="vjs-no-js">
-          To view this video please enable JavaScript, and consider upgrading to a
-          web browser
-        </p>
-      </video> */}
+      { beaconHidden ? null : <div className="project-info">
+        <h2>
+          Music video for Beacon's "Pay My Debts"
+        </h2>
+        <p><em>Apparent Movement, 2022</em></p>
+      </div> }
+      <div className="socials">
+        <a href="https://www.instagram.com/boytillek/?hl=nl" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/boytillekens" target="_blank">Linkedin</a>
+      </div>
     </div>
   )
 }

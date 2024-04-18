@@ -107,6 +107,7 @@
   background-color: rgb(234, 234, 234);
   color: rgb(49, 49, 49);
   z-index: 5;
+  box-shadow: 0 -100px 50px rgba(0, 0, 0, 0.7);
 }
 
 .project-container {
@@ -153,8 +154,33 @@
 
 .project-info {
   position: fixed;
-  bottom: 24;
-  margin-right: 50px;
-  padding-top: 12px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(242, 242, 242);
+  padding: 10px 50px;
   border-top: 0.5px solid gray
+}
+
+.socials {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  bottom: 24px;
+  right: 24px;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  z-index: 5;
+  mix-blend-mode: difference;
+}
+
+.socials a {
+  color: rgb(126, 126, 126);
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: rgb(230, 230, 230);
+  text-decoration: none;
 }

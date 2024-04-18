@@ -12,10 +12,6 @@ export default function Modalgrad({ open, onClose, url }) {
   return (
     <>
       <div className="overlay"></div>
-      <p style={{position: "fixed", top: 24, right: "auto", padding: 24, border: "1px solid gray"}}>
-        Online advertisement promoting the 15th anniversary of Kanye West's "Graduation" album
-        <br /><em>Universal Music Group</em>
-      </p>
       <div className="modal">
         <video style={gradStyles}
           controls

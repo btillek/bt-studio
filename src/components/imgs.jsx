@@ -1,5 +1,6 @@
 import Layer1 from './images/new-layer1.png'
 import Layer2 from './images/new-layer2.png'
+import Layer3 from './images/layer3.gif'
 
 import { useRef } from 'react'
 import { useScroll, useTransform, motion } from 'framer-motion'
@@ -26,6 +27,12 @@ export default function Imgs() {
       scale: scale4,
       pic: "layer2"
     }
+    // ,
+    // {
+    //   src: Layer3,
+    //   scale: scale4,
+    //   pic: "layer3"
+    // }
   ]
 
   return (
