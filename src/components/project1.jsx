@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import ModalNerd from './modal_nerd'
 import ModalWm from './modal_wm'
 import ModalBeacon from './modal_beacon'
