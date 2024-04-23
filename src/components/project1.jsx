@@ -31,7 +31,16 @@ function Project1() {
 
   const initialValues = { y: 200 };
   const animateValues = { y: 0, transition: { duration: 1, ease: [0.20, 0, 0.13, 1] } }
-  const exitValues = { y: 200, transition: { duration: 3, ease: [0.20, 0, 0.13, 1] } }
+  const exitValues = { y: 500, transition: { duration: 3, ease: [0.20, 0, 0.13, 1] } }
+
+  const modalAnimation = {
+    overlayInitial: { y: window.innerHeight },
+    overlayAnimate: { y: 0, transition: { duration: 1, ease: [0.20, 0, 0.13, 1] } },
+    overlayExit: { y: window.innerHeight, transition: { duration: 1, delay: 0.5, ease: [0.20, 0, 0.13, 1] } },
+    modalInitial: { opacity: 0 },
+    modalAnimate: { opacity: 1, transition: { duration: 1, delay: 1 } },
+    modalExit: { opacity: 0, transition: { duration: 0.5 } }
+  }
 
   return (
     <div className="project-container">
@@ -40,16 +49,19 @@ function Project1() {
       <h2 onClick={() => setShowNerd(true)} onMouseEnter={() => setNerdHidden(false)} onMouseLeave={() => setNerdHidden(true)} className="link">
         N*E*R*D "In Search Of..."</h2>
         2022 <br />
-      <ModalNerd
-        open={showNerd}
-        onClose={() => setShowNerd(false)}
-      />
+        <ModalNerd
+          key="nerd"
+          animation={modalAnimation}
+          open={showNerd}
+          onClose={() => setShowNerd(false)}
+        />
 
       <h2 onClick={() => setShowGrad(true)} onMouseEnter={() => setGradHidden(false)} onMouseLeave={() => setGradHidden(true)} className="link">
         Kanye West "Graduation" Anniversary</h2>
         2022 <br />
       <ModalGrad
         open={showGrad}
+        animation={modalAnimation}
         onClose={() => setShowGrad(false)}
       />
 
@@ -58,6 +70,7 @@ function Project1() {
         2022 <br />
       <ModalDice
         open={showDice}
+        animation={modalAnimation}
         onClose={() => setShowDice(false)}
         />
 
@@ -66,6 +79,7 @@ function Project1() {
         2022 <br />
       <ModalCabin
         open={showCabin}
+        animation={modalAnimation}
         onClose={() => setShowCabin(false)}
         />
 
@@ -74,6 +88,7 @@ function Project1() {
         2023 <br />
       <ModalMaya
         open={showMaya}
+        animation={modalAnimation}
         onClose={() => setShowMaya(false)}
         />
 
@@ -82,6 +97,7 @@ function Project1() {
         2021 <br />
       <ModalIdiotbox
         open={showIdiotbox}
+        animation={modalAnimation}
         onClose={() => setShowIdiotbox(false)}
         />
 
@@ -90,6 +106,7 @@ function Project1() {
         2023 <br />
       <ModalWm
         open={showWm}
+        animation={modalAnimation}
         onClose={() => setShowWm(false)}
         />
 
@@ -98,6 +115,7 @@ function Project1() {
         2022<br />
       <ModalBeacon
         open={showBeacon}
+        animation={modalAnimation}
         onClose={() => setShowBeacon(false)}
         />
 
@@ -210,8 +228,8 @@ function Project1() {
       </AnimatePresence>
 
       <div className="socials">
-        <a href="https://www.instagram.com/boytillek/?hl=nl" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com/in/boytillekens" target="_blank">Linkedin</a>
+        <a href="https://www.instagram.com/boytillek/?hl=nl" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/boytillekens" target="_blank" rel="noreferrer">Linkedin</a>
       </div>
     </div>
   )

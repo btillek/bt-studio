@@ -1,12 +1,10 @@
 import React from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import Dice1 from './images/Dice-1.gif'
 import Dice2 from './images/Dice-2.gif'
 import Dice3 from './images/Dice-3.gif'
 
-
-
-export default function ModalDice({ open, onClose }) {
-  if (!open) return null
+export default function ModalDice({ open, onClose, animation }) {
 
   const imgContainerStyles = {
     display: "flex",
@@ -19,16 +17,34 @@ export default function ModalDice({ open, onClose }) {
   }
 
   return (
-    <>
-      <div className="overlay"></div>
-      <div className="modal">
-        <div style={imgContainerStyles} >
-          <img style={imgStyles} src={Dice1} alt="dice" />
-          <img style={imgStyles} src={Dice2} alt="dice" />
-          <img style={imgStyles} src={Dice3} alt="dice" />
+    <AnimatePresence>
+      {open && (
+        <div>
+          <motion.div
+            className="overlay"
+            key="overlay"
+            onClick={onClose}
+            initial={animation.overlayInitial}
+            animate={animation.overlayAnimate}
+            exit={animation.overlayExit}
+          />
+
+          <motion.div
+            className="modal"
+            key="modal"
+            initial={animation.modalInitial}
+            animate={animation.modalAnimate}
+            exit={animation.modalExit}
+          >
+            <div style={imgContainerStyles} >
+              <img style={imgStyles} src={Dice1} alt="dice" />
+              <img style={imgStyles} src={Dice2} alt="dice" />
+              <img style={imgStyles} src={Dice3} alt="dice" />
+            </div>
+            <p className="closeBtn" onClick={onClose}>close</p>
+          </motion.div>
         </div>
-        <p onClick={onClose}>close</p>
-      </div>
-    </>
+      )}
+    </AnimatePresence>
   )
 }

@@ -1,8 +1,8 @@
 import React from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import Graduation from './videos/Graduation.mp4'
 
-export default function Modalgrad({ open, onClose, url }) {
-  if (!open) return null
+export default function Modalgrad({ open, onClose, animation }) {
 
   const gradStyles = {
     width: "45vw",
@@ -10,18 +10,36 @@ export default function Modalgrad({ open, onClose, url }) {
   }
 
   return (
-    <>
-      <div className="overlay"></div>
-      <div className="modal">
-        <video style={gradStyles}
-          controls
-          muted
-          autoplay=""
-          src={Graduation}
-        >
-        </video>
-        <p onClick={onClose}>close</p>
-      </div>
-    </>
+    <AnimatePresence>
+      {open && (
+        <div>
+          <motion.div
+            className="overlay"
+            key="overlay"
+            onClick={onClose}
+            initial={animation.overlayInitial}
+            animate={animation.overlayAnimate}
+            exit={animation.overlayExit}
+          />
+
+          <motion.div
+            className="modal"
+            key="modal"
+            initial={animation.modalInitial}
+            animate={animation.modalAnimate}
+            exit={animation.modalExit}
+           >
+            <video style={gradStyles}
+              controls
+              muted
+              autoplay=""
+              src={Graduation}
+            >
+            </video>
+            <p className="closeBtn" onClick={onClose}>close</p>
+          </motion.div>
+        </div>
+      )}
+    </AnimatePresence>
   )
 }
