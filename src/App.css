@@ -96,12 +96,11 @@
   width: 100vw;
   height: 100vh;
   padding-left: 50px;
-  /* background-color: rgb(234, 234, 234); */
-  background-color: rgb(241, 231, 230);
-
+  background-color: rgb(234, 234, 234);
+  /* background-color: rgb(241, 231, 230); */
   color: rgb(49, 49, 49);
   z-index: 10;
-  box-shadow: 0 -100px 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 -100px 50px rgba(0, 0, 0, 0.4);
 }
 
 .project-container {
@@ -143,7 +142,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(17, 17, 17, 0.95);
 }
 
 .project-info {

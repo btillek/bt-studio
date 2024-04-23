@@ -13,18 +13,18 @@ export default function Imgs() {
     offset: ['start start', 'end end']
   })
 
-  const scale4 = useTransform(scrollYProgress, [0, 1], [1, 6])
-  const scale6 = useTransform(scrollYProgress, [0, 1], [1, 9])
+  const scale1 = useTransform(scrollYProgress, [0, 1], [1, 5])
+  const scale2 = useTransform(scrollYProgress, [0, 1], [1, 9])
 
   const pics = [
     {
       src: Layer1,
-      scale: scale6,
+      scale: scale2,
       pic: "layer1"
     },
     {
       src: Layer2,
-      scale: scale4,
+      scale: scale1,
       pic: "layer2"
     }
     // ,
