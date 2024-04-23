@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.cfb21eca.css",
-    "main.js": "/portfolio-website/static/js/main.50355313.js",
+    "main.css": "/portfolio-website/static/css/main.3255f969.css",
+    "main.js": "/portfolio-website/static/js/main.6837a59c.js",
     "static/media/Graduation.mp4": "/portfolio-website/static/media/Graduation.5be4863c878225ffbac1.mp4",
     "static/media/new-layer2.png": "/portfolio-website/static/media/new-layer2.c7a7672dd2e066daf9b7.png",
     "static/media/new-layer1.png": "/portfolio-website/static/media/new-layer1.4c39075e6f19af09ce6c.png",
-    "static/media/layer3.gif": "/portfolio-website/static/media/layer3.b6087071bf9791348553.gif",
     "static/media/Dice-1.gif": "/portfolio-website/static/media/Dice-1.5b4da566e6488bb11960.gif",
     "static/media/Dice-2.gif": "/portfolio-website/static/media/Dice-2.55da4d6cb10c56a62c63.gif",
     "static/media/Dice-3.gif": "/portfolio-website/static/media/Dice-3.e0c87fc047bbf12f9b73.gif",
     "static/media/1.gif": "/portfolio-website/static/media/1.07056b0ce44be274ed58.gif",
     "index.html": "/portfolio-website/index.html",
-    "main.cfb21eca.css.map": "/portfolio-website/static/css/main.cfb21eca.css.map",
-    "main.50355313.js.map": "/portfolio-website/static/js/main.50355313.js.map"
+    "main.3255f969.css.map": "/portfolio-website/static/css/main.3255f969.css.map",
+    "main.6837a59c.js.map": "/portfolio-website/static/js/main.6837a59c.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfb21eca.css",
-    "static/js/main.50355313.js"
+    "static/css/main.3255f969.css",
+    "static/js/main.6837a59c.js"
   ]
 }
