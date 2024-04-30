@@ -38,6 +38,49 @@ function Projects() {
     modalExit: { opacity: 0, transition: { duration: 0.5 } }
   }
 
+  const infoSlides = [
+    {
+      hidden: nerdHidden,
+      h2: `Online advertisement promoting the release of a new line of merchandise celebrating the 20th anniversary of N*E*R*D's debut album "In Search Of..."`,
+      p: 'N*E*R*D, 2022'
+    },
+    {
+      hidden: gradHidden,
+      h2: `Online advertisement promoting the 15th anniversary of Kanye West's "Graduation" album`,
+      p: 'Universal Music Group, 2022'
+    },
+    {
+      hidden: diceHidden,
+      h2: `3 different animations for the DICE logo, displayed whenever a user purchases a ticket through the app`,
+      p: 'DICE.FM, 2022'
+    },
+    {
+      hidden: cabinHidden,
+      h2: 'Short film about spending too much time inside, commissioned by Giphy to promote their new clips',
+      p: 'Giphy, 2022'
+    },
+    {
+      hidden: mayaHidden,
+      h2: `Music video for Maya Delilah's song "Silver Lining"`,
+      p: 'Capitol Music Group, 2023'
+    },
+    {
+      hidden: idiotboxHidden,
+      h2: 'Short animated interlude for Idiotbox, a film about pro surfer Kael Walsh. Directed by Wade Carroll',
+      p: 'Quicksilver, 2021'
+    },
+    {
+      hidden: wmHidden,
+      h2: 'Music video for the song "Wait" by Wrong Man',
+      p: 'Thirty Something Records, 2023'
+    },
+    {
+      hidden: beaconHidden,
+      h2: `Music video for Beacon's "Pay My Debts"`,
+      p: 'Apparent Movement, 2022'
+    }
+  ]
+
   return (
     <div className="project-container">
       <h3>Selected projects: </h3><br />
@@ -115,45 +158,14 @@ function Projects() {
         onClose={() => setShowBeacon(false)}
         />
 
-      <InfoSlide hidden={nerdHidden}>
-        <h2>Online advertisement promoting the release of a new line of merchandise celebrating the 20th anniversary of N*E*R*D's debut album "In Search Of..."</h2>
-        <p><em>N*E*R*D, 2022</em></p>
-      </InfoSlide>
-
-      <InfoSlide hidden={gradHidden}>
-        <h2>Online advertisement promoting the 15th anniversary of Kanye West's "Graduation" album</h2>
-        <p><em>Universal Music Group, 2022</em></p>
-      </InfoSlide>
-
-      <InfoSlide hidden={diceHidden}>
-        <h2>3 different animations for the DICE logo, displayed whenever a user purchases a ticket through the app</h2>
-        <p><em>DICE.FM, 2022</em></p>
-      </InfoSlide>
-
-      <InfoSlide hidden={cabinHidden}>
-        <h2>Short film about spending too much time inside, commissioned by Giphy to promote their new clips</h2>
-        <p><em>Giphy, 2022</em></p>
-      </InfoSlide>
-
-      <InfoSlide hidden={mayaHidden}>
-        <h2>Music video for Maya Delilah's song "Silver Lining"</h2>
-        <p><em>Capitol Music Group, 2023</em></p>
-      </InfoSlide>
-
-      <InfoSlide hidden={idiotboxHidden}>
-        <h2>Short animated interlude for Idiotbox, a film about pro surfer Kael Walsh. Directed by Wade Carroll</h2>
-        <p><em>Quicksilver, 2021</em></p>
-      </InfoSlide>
-
-      <InfoSlide hidden={wmHidden}>
-        <h2>Music video for the song "Wait" by Wrong Man</h2>
-        <p><em>Thirty Something Records, 2023</em></p>
-      </InfoSlide>
-
-      <InfoSlide hidden={beaconHidden}>
-        <h2>Music video for Beacon's "Pay My Debts"</h2>
-        <p><em>Apparent Movement, 2022</em></p>
-      </InfoSlide>
+      {infoSlides.map((slide) => {
+        return (
+          <InfoSlide hidden={slide.hidden}>
+            <h2>{slide.h2}</h2>
+            <p><em>{slide.p}</em></p>
+          </InfoSlide>
+        )
+      })}
 
       <div className="socials">
         <a href="https://www.instagram.com/boytillek/?hl=nl" target="_blank" rel="noreferrer">Instagram</a>
