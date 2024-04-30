@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import ModalNerd from './modals/modal_nerd'
 import ModalWm from './modals/modal_wm'
 import ModalBeacon from './modals/modal_beacon'
@@ -10,7 +9,7 @@ import ModalDice from './modals/modal_dice'
 import ModalGrad from './modals/modal_grad'
 import InfoSlide from './info_slide'
 
-function Project1() {
+function Projects() {
 
   const [showNerd, setShowNerd] = useState(false)
   const [showWm, setShowWm] = useState(false)
@@ -30,10 +29,6 @@ function Project1() {
   const [wmHidden, setWmHidden] = useState(true);
   const [beaconHidden, setBeaconHidden] = useState(true);
 
-  const initialValues = { y: 200 };
-  const animateValues = { y: 0, transition: { duration: 1, ease: [0.20, 0, 0.13, 1] } }
-  const exitValues = { y: 500, transition: { duration: 3, ease: [0.20, 0, 0.13, 1] } }
-
   const modalAnimation = {
     overlayInitial: { y: window.innerHeight },
     overlayAnimate: { y: 0, transition: { duration: 1, ease: [0.20, 0, 0.13, 1] } },
@@ -50,12 +45,12 @@ function Project1() {
       <h2 onClick={() => setShowNerd(true)} onMouseEnter={() => setNerdHidden(false)} onMouseLeave={() => setNerdHidden(true)} className="link">
         N*E*R*D "In Search Of..."</h2>
         2022 <br />
-        <ModalNerd
-          key="nerd"
-          animation={modalAnimation}
-          open={showNerd}
-          onClose={() => setShowNerd(false)}
-        />
+      <ModalNerd
+        key="nerd"
+        animation={modalAnimation}
+        open={showNerd}
+        onClose={() => setShowNerd(false)}
+      />
 
       <h2 onClick={() => setShowGrad(true)} onMouseEnter={() => setGradHidden(false)} onMouseLeave={() => setGradHidden(true)} className="link">
         Kanye West "Graduation" Anniversary</h2>
@@ -168,4 +163,4 @@ function Project1() {
   )
 }
 
-export default Project1
+export default Projects

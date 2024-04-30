@@ -1,7 +1,7 @@
 import './App.css';
 import MainImg from './components/main_img'
 import Imgs from './components/imgs'
-import Project1 from './components/project1'
+import Projects from './components/projects'
 import Lenis from '@studio-freight/lenis'
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
         </div>
       </div>
       <div className="project1">
-        <Project1 />
+        <Projects />
       </div>
     </div>
   );
