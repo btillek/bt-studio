@@ -1,19 +1,12 @@
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import Dice1 from './images/Dice-1.gif'
-import Dice2 from './images/Dice-2.gif'
-import Dice3 from './images/Dice-3.gif'
+import Graduation from '../videos/Graduation.mp4'
 
-export default function ModalDice({ open, onClose, animation }) {
+export default function Modalgrad({ open, onClose, animation }) {
 
-  const imgContainerStyles = {
-    display: "flex",
-    justifyContent: "space-between",
-    width: "90vw"
-  }
-
-  const imgStyles = {
-    width: "29vw"
+  const gradStyles = {
+    width: "45vw",
+    aspectRatio: "1 / 1"
   }
 
   return (
@@ -35,12 +28,14 @@ export default function ModalDice({ open, onClose, animation }) {
             initial={animation.modalInitial}
             animate={animation.modalAnimate}
             exit={animation.modalExit}
-          >
-            <div style={imgContainerStyles} >
-              <img style={imgStyles} src={Dice1} alt="dice" />
-              <img style={imgStyles} src={Dice2} alt="dice" />
-              <img style={imgStyles} src={Dice3} alt="dice" />
-            </div>
+           >
+            <video style={gradStyles}
+              controls
+              muted
+              autoplay=""
+              src={Graduation}
+            >
+            </video>
             <p className="closeBtn" onClick={onClose}>close</p>
           </motion.div>
         </div>
