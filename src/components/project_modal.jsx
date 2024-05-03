@@ -9,7 +9,7 @@ import Dice3 from './images/Dice-3.gif'
 export default function ProjectModal({ open, onClose }) {
 
   const modalAnimation = {
-    overlayInitial: { y: window.innerHeight },
+    overlayInitial: { y: -window.innerHeight },
     overlayAnimate: { y: 0, transition: { duration: 1, ease: [0.20, 0, 0.13, 1] } },
     overlayExit: { y: window.innerHeight, transition: { duration: 1, delay: 0.5, ease: [0.20, 0, 0.13, 1] } },
     modalInitial: { opacity: 0 },
@@ -38,7 +38,6 @@ export default function ProjectModal({ open, onClose }) {
         <div>
           <motion.div
             className="overlay"
-            key="overlay"
             onClick={onClose}
             initial={modalAnimation.overlayInitial}
             animate={modalAnimation.overlayAnimate}
@@ -47,7 +46,6 @@ export default function ProjectModal({ open, onClose }) {
 
           <motion.div
             className="modal"
-            key="modal"
             initial={modalAnimation.modalInitial}
             animate={modalAnimation.modalAnimate}
             exit={modalAnimation.modalExit}

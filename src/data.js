@@ -31,7 +31,7 @@ export const PROJECTS = [
     project: "maya",
     title: 'Maya Delilah "Silver Lining"',
     year: 2023,
-    description: `Music video for Maya Delilah's song "Silver Lining"`,
+    description: `Official lyric video for Maya Delilah's song "Silver Lining"`,
     client: 'Capitol Music Group, 2023'
   },
   {
