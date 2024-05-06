@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion'
+import './info_slide.css'
 
 export default function InfoSlide({projects, showInfo}) {
 

@@ -1,4 +1,5 @@
 import Picture1 from './images/1.gif'
+import './main_img.css'
 
 function MainImg() {
 

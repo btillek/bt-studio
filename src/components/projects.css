@@ -1,0 +1,82 @@
+.project1 {
+  position: absolute;
+  top: 210vh;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 50px;
+  background-color: rgb(234, 234, 234);
+  color: rgb(18, 18, 18);
+  z-index: 10;
+  box-shadow: 0 -100px 50px rgba(0, 0, 0, 0.1);
+}
+
+.project-container {
+  padding-top: 24px;
+  text-align: left;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(26, 26, 26);
+  font-size: 3rem;
+  font-weight: 500;
+  transition: 0.5s ease;
+  display: inline;
+  cursor: crosshair;
+}
+
+.link:hover {
+  opacity: 0.3;
+  transition: 0.5s ease;
+}
+
+.socials {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  bottom: 24px;
+  right: 24px;
+  z-index: 5;
+  mix-blend-mode: difference;
+}
+
+.socials a {
+  color: rgb(126, 126, 126);
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: rgb(230, 230, 230);
+  text-decoration: none;
+}
+
+@media (max-width:1024px) {
+
+  .project1 {
+    padding-left: 24px;
+  }
+
+  .link {
+    font-size: 2rem;
+  }
+
+}
+
+@media (max-width:600px) {
+
+  .project1 {
+    padding-left: 24px;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
+
+  .socials {
+    flex-direction: column;
+    gap: 5px;
+    text-align: right;
+  }
+
+}

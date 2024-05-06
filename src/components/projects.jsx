@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './projects.css'
 
 import { PROJECTS } from '../data'
 import ProjectModal from './project_modal'

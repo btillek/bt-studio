@@ -1,6 +1,7 @@
 import Layer1 from './images/new-layer1.png'
 import Layer2 from './images/new-layer2.png'
 // import Layer3 from './images/layer3.gif'
+import './imgs.css'
 
 import { useRef } from 'react'
 import { useScroll, useTransform, motion } from 'framer-motion'

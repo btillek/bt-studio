@@ -1,0 +1,49 @@
+.modal-vid {
+  width: 60vw;
+  aspect-ratio: 16 / 9;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.closeBtn {
+  color: rgb(165, 165, 165);
+  text-align: center;
+  margin-top: 50px;
+  cursor: crosshair;
+}
+
+.closeBtn:hover {
+  opacity: 0.5;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  /* z-index: 2; */
+}
+
+@media (max-width:1024px) {
+
+  .modal-vid {
+    width: 80vw;
+  }
+
+}
+
+@media (max-width:600px) {
+
+  .modal-vid {
+    width: 95vw;
+  }
+
+}

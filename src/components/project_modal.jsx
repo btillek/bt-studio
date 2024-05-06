@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import './project_modal.css'
 
 import Graduation from './videos/Graduation.mp4'
 import Dice1 from './images/Dice-1.gif'

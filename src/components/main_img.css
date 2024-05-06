@@ -1,0 +1,17 @@
+.main-container {
+  height: 300vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+}
+
+.main-sticky {
+  position: sticky;
+  top: 0px;
+  height: 100vh;
+}
+
+.main-image {
+  height: 30vh;
+  object-fit: cover;
+}
