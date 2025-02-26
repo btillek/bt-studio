@@ -1,20 +1,29 @@
 {
   "files": {
-    "main.css": "/bt-studio/static/css/main.3b3cb24f.css",
-    "main.js": "/bt-studio/static/js/main.39631d02.js",
-    "static/media/Graduation.mp4": "/bt-studio/static/media/Graduation.5be4863c878225ffbac1.mp4",
-    "static/media/new-layer2.png": "/bt-studio/static/media/new-layer2.c7a7672dd2e066daf9b7.png",
-    "static/media/new-layer1.png": "/bt-studio/static/media/new-layer1.4c39075e6f19af09ce6c.png",
-    "static/media/Dice-1.gif": "/bt-studio/static/media/Dice-1.5b4da566e6488bb11960.gif",
-    "static/media/Dice-2.gif": "/bt-studio/static/media/Dice-2.55da4d6cb10c56a62c63.gif",
-    "static/media/Dice-3.gif": "/bt-studio/static/media/Dice-3.e0c87fc047bbf12f9b73.gif",
-    "static/media/1.gif": "/bt-studio/static/media/1.07056b0ce44be274ed58.gif",
-    "index.html": "/bt-studio/index.html",
-    "main.3b3cb24f.css.map": "/bt-studio/static/css/main.3b3cb24f.css.map",
-    "main.39631d02.js.map": "/bt-studio/static/js/main.39631d02.js.map"
+    "main.css": "/static/css/main.e408ad58.css",
+    "main.js": "/static/js/main.905b671f.js",
+    "static/media/Graduation.mp4": "/static/media/Graduation.5be4863c878225ffbac1.mp4",
+    "static/media/nerd-thumb.png": "/static/media/nerd-thumb.8d0780a04e6d682185b9.png",
+    "static/media/new-layer2.png": "/static/media/new-layer2.c7a7672dd2e066daf9b7.png",
+    "static/media/new-layer1.png": "/static/media/new-layer1.4c39075e6f19af09ce6c.png",
+    "static/media/beacon-thumb.png": "/static/media/beacon-thumb.a3808845603f16af2d82.png",
+    "static/media/kanye-small2.png": "/static/media/kanye-small2.21f34edec1da7836dfdc.png",
+    "static/media/kanye-small.png": "/static/media/kanye-small.6fd3b34bfe6e2e408fad.png",
+    "static/media/maya-thumb.png": "/static/media/maya-thumb.e72851482898fe167fff.png",
+    "static/media/wrongmang-small.png": "/static/media/wrongmang-small.08ea4fb8b9179a863a54.png",
+    "static/media/Dice-1.gif": "/static/media/Dice-1.5b4da566e6488bb11960.gif",
+    "static/media/Dice-2.gif": "/static/media/Dice-2.55da4d6cb10c56a62c63.gif",
+    "static/media/idiotbox-thumb.png": "/static/media/idiotbox-thumb.98fbb4d42cb860a4f894.png",
+    "static/media/cabin-thumb.png": "/static/media/cabin-thumb.72bd8d373b3063730c61.png",
+    "static/media/Dice-3.gif": "/static/media/Dice-3.e0c87fc047bbf12f9b73.gif",
+    "static/media/1.gif": "/static/media/1.07056b0ce44be274ed58.gif",
+    "static/media/dice-thumb.png": "/static/media/dice-thumb.ea498ab53092433cddc5.png",
+    "index.html": "/index.html",
+    "main.e408ad58.css.map": "/static/css/main.e408ad58.css.map",
+    "main.905b671f.js.map": "/static/js/main.905b671f.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b3cb24f.css",
-    "static/js/main.39631d02.js"
+    "static/css/main.e408ad58.css",
+    "static/js/main.905b671f.js"
   ]
 }
