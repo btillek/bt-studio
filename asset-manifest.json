@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bt-studio/static/css/main.5f3737c6.css",
+    "main.css": "/bt-studio/static/css/main.86d91f71.css",
     "main.js": "/bt-studio/static/js/main.53ca89ab.js",
     "static/media/Graduation.mp4": "/bt-studio/static/media/Graduation.5be4863c878225ffbac1.mp4",
     "static/media/nerd-thumb.png": "/bt-studio/static/media/nerd-thumb.8d0780a04e6d682185b9.png",
@@ -19,11 +19,11 @@
     "static/media/1.gif": "/bt-studio/static/media/1.07056b0ce44be274ed58.gif",
     "static/media/dice-thumb.png": "/bt-studio/static/media/dice-thumb.ea498ab53092433cddc5.png",
     "index.html": "/bt-studio/index.html",
-    "main.5f3737c6.css.map": "/bt-studio/static/css/main.5f3737c6.css.map",
+    "main.86d91f71.css.map": "/bt-studio/static/css/main.86d91f71.css.map",
     "main.53ca89ab.js.map": "/bt-studio/static/js/main.53ca89ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f3737c6.css",
+    "static/css/main.86d91f71.css",
     "static/js/main.53ca89ab.js"
   ]
 }
